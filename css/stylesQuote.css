@@ -1,0 +1,105 @@
+
+
+body {
+
+
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Lato', sans-serif;
+  background: url("lionNRG.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;;
+
+ color: #F3F1ED;
+
+}
+
+.text-thin {
+    
+    
+    font-family: 'Dancing Script', cursive;
+    font-weight: 40px;
+}
+
+text-lato {
+    
+    font-family: 'Lato', sans-serif;
+}
+
+.titleI {
+
+  color: #F3F1ED;
+  padding-bottom: 50px;
+
+}
+
+
+.btn-default, btn-default:focus {
+    
+    margin-left: 20px;
+    background: #F9562A;
+    color: azure;
+    
+}
+
+.btn-default:hover {
+    
+    background: #34495e;
+    color:aliceblue;
+    font-weight: bold;
+    
+    
+}
+
+.test {
+    
+    background: red; 
+}
+
+
+.imgBack {
+
+
+padding-bottom: 60px;
+padding-top: 30px;
+color: #ecf0f1;
+background: rgba(50, 50, 50, 0.6);
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+}
+
+.textQuote {
+
+height: 170px;
+
+}
+
+.textShare {
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+#buttons > a {
+    
+background: white;
+     
+    
+}
+
+#buttons > a:hover {
+    
+     background: #55acee;
+     color: aliceblue;
+     font-style: italic;
+       
+}
+
+#followUs {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
