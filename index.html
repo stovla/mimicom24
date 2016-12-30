@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web and Software Development / Seo / Marketing</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald|Raleway|Roboto|Source+Sans+Pro" rel="stylesheet">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
 
   </head>
     
@@ -80,7 +80,7 @@
                                           <div class="caption">
                                             <h3>User Experience Design</h3>
                                             <p>We explore potential concepts for cross device experiences through wireframes and digital prototypes.</p>
-                                            <p><button class="btn btn-primary" role="button" data-toggle="modal" data-target="#project1">Read More</button> </p>
+                                            <p><button class="btn btn-primary" role="button" data-toggle="modal" data-target="#project1">Read More</button></p>
                                           </div>
                                         </div>
                                       </div>
@@ -410,8 +410,12 @@
 
   ga('create', 'UA-33195648-4', 'auto');
   ga('send', 'pageview');
-
-</script>
+//   navigation toggle
+  $('.nav a').click(function() {
+		$(".collapse").collapse('hide');
+	});
+		</script>
+<script type="text/javascript" src="js/app.js"></script>
       
   </body>
 </html>

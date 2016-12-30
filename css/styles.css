@@ -8,10 +8,14 @@ font-family: 'Source Sans Pro', sans-serif;
     
 }
 
-.text-thin {
+.text-thin em {
     
-    font-weight: 50px;
+    font-weight: 700;
        
+}
+
+.img-responsive {
+    margin: 0 auto;
 }
 
 .text-muted {
@@ -29,6 +33,9 @@ font-family: 'Source Sans Pro', sans-serif;
     background-image: url(website-background-15.png);
     
    
+}
+.caption p:first-of-type {
+    height: 70px;
 }
 
 #Portfolio {
