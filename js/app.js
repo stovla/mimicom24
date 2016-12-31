@@ -8,5 +8,12 @@ $(document).ready(function () {
         if (!$this.hasClass('active')) {
             $this.addClass('active');
         }
+        
     });
+    //   navigation toggle
+    $('.nav li').click(function() {
+        if (!this.hasClass('dropdown-toggle')) {
+            $(".collapse").collapse('hide');
+        }
+	});
 });
