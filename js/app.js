@@ -10,10 +10,26 @@ $(document).ready(function () {
         }
         
     });
-    //   navigation toggle
+    // ----- navigation toggle -----
     $('.nav li').click(function() {
         if (!this.hasClass('dropdown-toggle')) {
             $(".collapse").collapse('hide');
         }
+	});
+	// ----- back to top button -----
+	var pixelNumber = 300;
+	$(window).scroll(function() {
+	    if ( $(window).scrollTop() > pixelNumber) {
+	        $('.back-to-top').fadeIn('slow');
+	    } else {
+	        $('.back-to-top').fadeOut('slow');
+	    }
+	});
+	
+	$('.back-to-top').click(function() {
+	    $('html, body').animate({
+	        scrollTop: 0
+	    }, 700);
+	    return false;
 	});
 });
