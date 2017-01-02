@@ -433,7 +433,12 @@ unknown: true
 
 
 var currentIdx;
-
+var index = 0;
+var welcome = '';
+var word = ' Welcome';
+$(document).ready(function(){
+  setInterval(typingText, 300);
+});
 
 function updateQuote() {
   
@@ -463,9 +468,28 @@ function shareTweet () {
     
 }
 
+function typingText (){
+	$('#typed').text('');
+  if (index !== word.length) {
+  	welcome += word[index];
+  	$('#typed').text(welcome);
+  	index++;
+  } else {
+  	index = 0;
+    welcome = '';
+  }
+}
 
-
-$(function(){ 
+$(function(){
+  // function enter() {
+  //           $('#typed').typed({
+  //             strings: ["Welcome"],
+  //             typeSpeed: 200,
+  //             backDelay: 500,
+  //           showCursor: false,
+  //             loop:true
+  //           });
+  //       }
   updateQuote(); 
   $('#generator').click(updateQuote);
     $('#twitter').click(shareTweet);

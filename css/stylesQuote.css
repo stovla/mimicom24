@@ -21,17 +21,14 @@ body {
     font-weight: 40px;
 }
 
-text-lato {
+/*text-lato {*/
     
-    font-family: 'Lato', sans-serif;
+/*    font-family: 'Lato', sans-serif;*/
+/*}*/
+#typed {
+    height: 36px;
 }
 
-.titleI {
-
-  color: #F3F1ED;
-  padding-bottom: 50px;
-
-}
 
 .test {
     
@@ -90,3 +87,16 @@ a:hover {
 #followUs {
     font-family: cursive;
 }
+
+.fa-twitter {
+    color: #337ab7;
+    transition-delay: 0.7s;
+}
+.fa-twitter:hover {
+    animation: spin 0.7s;
+    cursor: pointer;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
