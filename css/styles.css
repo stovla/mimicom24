@@ -8,10 +8,9 @@ body {
     margin: 0 15px;
 }
 
-.text-thin em {
-    
+.text-thin {
+    height: 45px;
     font-weight: 700;
-       
 }
 
 .img-responsive {

@@ -92,7 +92,7 @@ a:hover {
     color: #337ab7;
     transition-delay: 0.7s;
 }
-.fa-twitter:hover {
+#twitter:hover .fa-twitter {
     animation: spin 0.7s;
     cursor: pointer;
 }

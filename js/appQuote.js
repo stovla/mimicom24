@@ -435,10 +435,24 @@ unknown: true
 var currentIdx;
 var index = 0;
 var welcome = '';
-var word = ' Welcome';
+var breakingLine = '<br>'
+var word = ['W','e','l','c','o','m','e','<br>','F','i','n','d',' ','S','o','m','e',' ','I','n','s','p','i','r','a','t','i','o','n'];
+
 $(document).ready(function(){
-  setInterval(typingText, 300);
+  typingText();
 });
+
+
+
+function typingText (){
+  var interval = setInterval(function() {
+    if (index !== word.length) {
+  	welcome += word[index];
+  	$('#typed').html(welcome);
+  	index++;
+    }
+  }, 300);
+}
 
 function updateQuote() {
   
@@ -468,17 +482,7 @@ function shareTweet () {
     
 }
 
-function typingText (){
-	$('#typed').text('');
-  if (index !== word.length) {
-  	welcome += word[index];
-  	$('#typed').text(welcome);
-  	index++;
-  } else {
-  	index = 0;
-    welcome = '';
-  }
-}
+
 
 $(function(){
   // function enter() {

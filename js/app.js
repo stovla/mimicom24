@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    // ----- scrolling header -----
+    var welcome = "";
+    var word = "MimiCom24";
+    typingText();
+    function typingText (){
+        var index = 0;
+        var interval = setInterval(function() {
+        if (index !== word.length) {
+            welcome += word[index];
+            $('.text-thin em').html(welcome);
+            index++;
+        }
+      }, 300);
+    }
+    
     // ----- putting every button in paragraph to the right -----
     $('button').parent('p').css("text-align", "right");
     // ----- changing active navbar -----
