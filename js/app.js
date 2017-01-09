@@ -13,7 +13,31 @@ $(document).ready(function () {
         }
       }, 300);
     }
+    //  ----- scrolling message loop -----
+    var word2 = "Stop waiting. Start building.";
+    var modified2 = "";
+    typingTextLoop(word2);
+    function typingTextLoop (text){
+        var index = 0;
+        var interval = setInterval(function() {
+        if (index !== text.length) {
+            modified2 += text[index];
+            $('#typeLoop').html(modified2);
+            index++;
+        } else {
+            index = 0;
+            $('#typeLoop').html("");
+            modified2 = "";
+        }
+      }, 300);
+    }
+    // ----- change collors for the button 'get free quote' -----
+    var colors = ["#8a2be", "#ff4500", "#008b8b", "#2e8b57", "#337ab7"];
     
+        setInterval(function () {
+            //color = colors[Math.floor(4 * Math.random())];
+            $(".colored").css("background", colors[Math.floor(Math.random() * 5)]);
+        }, 3000);
     // ----- putting every button in paragraph to the right -----
     $('button').parent('p').css("text-align", "right");
     // ----- changing active navbar -----
