@@ -25,12 +25,6 @@ $(document).ready(function () {
         }
         
     });
-    // ----- navigation toggle -----
-    $('.nav li').click(function() {
-        if (!this.hasClass('dropdown-toggle')) {
-            $(".collapse").collapse('hide');
-        }
-	});
 	// ----- back to top button -----
 	var pixelNumber = 300;
 	$(window).scroll(function() {
