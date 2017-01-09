@@ -18,20 +18,24 @@ body {
 }
 
 .text-muted {
-    
-    
     color: #BCBBBB;
 }
-
+.colored {
+    font-weight: bold;
+}
+/*.quote {*/
+/*    margin: 0 -30px;*/
+/*    padding: 30px;*/
+/*    background: #BCBBBB ;*/
+/*}*/
 
 .jumbotron {
-    margin: 0 -15px;
+    margin: 15px -15px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 50px;
     background-image: url(website-background-15.png);
-    
-   
+    background-position: bottom;
 }
 .caption p:first-of-type {
     height: 70px;
