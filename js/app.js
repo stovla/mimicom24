@@ -31,12 +31,13 @@ $(document).ready(function () {
         }
       }, 300);
     }
-    // ----- change collors for the button 'get free quote' -----
-    var colors = ["#8a2be", "#ff4500", "#008b8b", "#2e8b57", "#337ab7"];
+   // ----- change collors for the button 'get free quote' -----
+    var colors = ["btn-primary", "btn-danger", "btn-success", "btn-info", "btn-warning"];
     
         setInterval(function () {
+            $('.colored').removeClass('btn-primary btn-danger btn-info btn-warning btn-success');
             //color = colors[Math.floor(4 * Math.random())];
-            $(".colored").css("background", colors[Math.floor(Math.random() * 5)]);
+            $(".colored").addClass(""+colors[Math.floor(Math.random() * 5)]+"");
         }, 3000);
     // ----- putting every button in paragraph to the right -----
     $('button').parent('p').css("text-align", "right");
