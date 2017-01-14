@@ -90,4 +90,8 @@ $(document).ready(function () {
             });
         }  // End if
     });
+    // Add tab pane function
+  $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
 });
